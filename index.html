@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счастье</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #2e8b57;
+            margin-top: 30px;
+            transition: color 0.3s;
+        }
+        h2:hover {
+            color: #1c5e3a;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .toggle-button {
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-button:hover {
+            background-color: #1c5e3a;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2e8b57;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Счастье</h1>
+</header>
+
+<main>
+    <div class="section">
+        <h2>Что такое счастье?</h2>
+        <p>Счастье — это состояние душевного удовлетворения, которое многие стремятся достичь в жизни.</p>
+        <button class="toggle-button" onclick="toggleDetails('happiness-details')">Подробнее</button>
+        <div id="happiness-details" style="display: none;">
+            <p>Счастье может быть вызвано различными факторами, включая здоровье, отношения и удовлетворение от работы.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Что делает нас счастливыми?</h2>
+        <ul>
+            <li>Здоровье</li>
+            <li>Любимые люди</li>
+            <li>Самореализация</li>
+            <li>Позитивные эмоции</li>
+        </ul>
+        <button class="toggle-button" onclick="toggleDetails('happiness-factors-details')">Подробнее</button>
+        <div id="happiness-factors-details" style="display: none;">
+            <p>Поддержка близких и положительные отношения играют ключевую роль в нашем счастье.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Как достичь счастья?</h2>
+        <p>Счастье можно найти в простых вещах: общении с близкими, занятиях любимым хобби и помощи другим.</p>
+        <button class="toggle-button" onclick="toggleDetails('happiness-achievement-details')">Подробнее</button>
+        <div id="happiness-achievement-details" style="display: none;">
+            <p>Регулярные занятия спортом и практика благодарности могут значительно повысить уровень счастья.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Вывод</h2>
+        <p>Счастье — это не конечная цель, а путь. Ищите радость в каждом дне!</p>
+    </div>
+</main>
+
+<footer id="fgfg">
+    <p>Проект делали: Сабина, Амина, Нигина, Саидазим, Сардор, Юнус, Юсуф, Азим, Абдусамад, Махмуд</p>
+</footer>
+
+<script>
+    function toggleDetails(detailsId) {
+        const details = document.getElementById(detailsId);
+        details.style.display = (details.style.display === 'none') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>
+
